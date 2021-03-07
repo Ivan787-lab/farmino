@@ -3,7 +3,7 @@
  ## Что используется в проекте?
  
  - Сборщик проектов Gulp
-   - browser-sync
+   - browser-sync 
    - scss-formatter
    - cache (для сжатия картинок и файлов)
    - autoprefixer
