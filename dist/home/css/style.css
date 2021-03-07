@@ -5,7 +5,7 @@
 /* ::selection {
     color: white;
     background-color: #7eb8003a;
-} */
+} */ 
 .main-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -103,7 +103,7 @@
     border-radius: 50%;
     width: 689px;
     height: 689px;
-    left: 62.5%;
+    left: 63.8%;
     border-top-right-radius: 0;
     top: 1px; }
   .main-container .main-container__benefits-container {
@@ -1001,7 +1001,7 @@
           -ms-flex-pack: center;
               justify-content: center;
       -webkit-box-orient: vertical;
-      -webkit-box-direction: normal; 
+      -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
