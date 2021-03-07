@@ -1,4 +1,4 @@
-{
+{ 
   "name": "farmino",
   "version": "1.0.0",
   "description": "- Сборщик проектов Gulp\r    - browser-sync\r    - scss-formatter\r    - cache (для сжатия картинок и файлов)\r    - autoprefixer\r - Препроцессор scss",

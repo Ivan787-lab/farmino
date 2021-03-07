@@ -88,7 +88,7 @@ gulp.task('img', function () {
             use: [pngquant()]
         })))
         .pipe(dest('dist/home/img'))
-})
+}) 
 
 gulp.task('prebuild', async function () {
     let buildCss = gulp.src([
