@@ -76,7 +76,7 @@ gulp.task('watch', function () {
 /*gulp.task('clean', function () {
     return del.sync('dist/')// удалит папку dist
 })*/
- 
+
 gulp.task('img', function () {
     return gulp.src('app/pages/services/img/**/*')
         .pipe(cache(imagemin({
