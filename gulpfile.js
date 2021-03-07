@@ -12,24 +12,24 @@ var gulp = require('gulp'),//npm i gulp --save-dev
     autoprefixer = require('gulp-autoprefixer') //npm i --save-dev gulp-autoprefixer
 
 gulp.task('scss', function () { // Создаем таск "sass"
-    return gulp.src('app/pages/home/css/**/*.scss') // Берем источник
+    return gulp.src('app/pages/about/css/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         })) // Создаем префиксы
-        .pipe(gulp.dest('app/pages/home/css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('app/pages/about/css')) // Выгружаем результата в папку app/css
         .pipe(browser_sync.reload({
             stream: true
         }))
 });
 
 gulp.task('scss', function () { // Создаем таск "sass"
-    return gulp.src('app/pages/home/css/**/*.scss') // Берем источник
+    return gulp.src('app/pages/about/css/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         })) // Создаем префиксы
-        .pipe(gulp.dest('app/pages/home/css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('app/pages/about/css')) // Выгружаем результата в папку app/css
         .pipe(browser_sync.reload({
             stream: true
         }))
@@ -48,14 +48,14 @@ gulp.task('browser_sync', function () {
 })
 
 gulp.task('html', function () {
-    return gulp.src('app/pages/home/**/*.html')
+    return gulp.src('app/pages/about/**/*.html')
         .pipe(browser_sync.reload({
             stream: true
         }))
 })
 
 gulp.task('scripts', function () {
-    return gulp.src(['app/pages/home/js/**/*.js', 'app/pages/home/libs**/*.js'])
+    return gulp.src(['app/pages/about/js/**/*.js', 'app/pages/about/libs**/*.js'])
         .pipe(browser_sync.reload({
             stream: true
         }))
@@ -63,9 +63,9 @@ gulp.task('scripts', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('app/pages/home/css/**/*.scss', gulp.parallel('scss'));
-    gulp.watch('app/pages/home/**/*.html', gulp.parallel('html'))
-    gulp.watch(['app/pages/home/js/**/*.js', 'app/pages/home/libs/**/*.js'], gulp.parallel('scripts'))
+    gulp.watch('app/pages/about/css/**/*.scss', gulp.parallel('scss'));
+    gulp.watch('app/pages/about/**/*.html', gulp.parallel('html'))
+    gulp.watch(['app/pages/about/js/**/*.js', 'app/pages/about/libs/**/*.js'], gulp.parallel('scripts'))
 })
 
 //вводил gulp watch
@@ -78,7 +78,7 @@ gulp.task('watch', function () {
 })*/
 
 gulp.task('img', function () {
-    return gulp.src('app/pages/home/img/**/*')
+    return gulp.src('app/pages/about/img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
@@ -87,24 +87,27 @@ gulp.task('img', function () {
             }],
             use: [pngquant()]
         })))
-        .pipe(dest('dist/home/img'))
+        .pipe(dest('dist/pages/about/img'))
 }) 
 
 gulp.task('prebuild', async function () {
     let buildCss = gulp.src([
-        'app/pages/home/css/**/*.css',
-        'app/pages/home/css/**/*.scss',
+        'app/pages/about/css/**/*.css',
+        'app/pages/about/css/**/*.scss',
     ])
-        .pipe(gulp.dest('dist/home/css'))
+        .pipe(gulp.dest('dist/pages/about/css'))
 
     let buildJs = gulp.src('app/pages/home/js/**/*.js')
-        .pipe(gulp.dest('dist/home/js'));
+        .pipe(gulp.dest('dist/pages/about/js'));
 
-    let buildHtml = gulp.src('app/pages/home/**/*.html')
-        .pipe(gulp.dest('dist/home'));
+    let buildHtml = gulp.src('app/pages/about/**/*.html')
+        .pipe(gulp.dest('dist/pages/about'));
 
-    let buildLibs = gulp.src("app/pages/home/libs/**/*")
-        .pipe(gulp.dest("dist/home/libs"))
+    let buildLibs = gulp.src("app/pages/about/libs/**/*")
+        .pipe(gulp.dest("dist/pages/about/libs"))
+
+    let buildRobotsFile = gulp.src("app/pages/robots.txt")
+    .pipe(gulp.dest("dist/pages"))
 })
 
 gulp.task('clear', function () {

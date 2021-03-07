@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0; }
 
-/* ::selection {
+/* ::selection { 
     color: white;
     background-color: #7eb8003a;
-} */ 
+} */
 .main-container {
   display: -webkit-box;
   display: -webkit-flex;
