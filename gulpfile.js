@@ -72,11 +72,11 @@ gulp.task('watch', function () {
 
 
 //для итоговой папки dist
- 
+
 /*gulp.task('clean', function () {
     return del.sync('dist/')// удалит папку dist
 })*/
- 
+
 gulp.task('img', function () {
     return gulp.src('app/pages/services/img/**/*')
         .pipe(cache(imagemin({
@@ -88,8 +88,8 @@ gulp.task('img', function () {
             use: [pngquant()]
         })))
         .pipe(dest('dist/pages/services/img'))
-}) 
- 
+})
+
 gulp.task('prebuild', async function () {
     let buildCss = gulp.src([
         'app/pages/services/css/**/*.css',
@@ -97,17 +97,17 @@ gulp.task('prebuild', async function () {
     ])
         .pipe(gulp.dest('dist/pages/services/css'))
 
-    let buildJs = gulp.src('app/pages/home/js/**/*.js')
+    let buildJs = gulp.src('app/pages/services/js/**/*.js')
         .pipe(gulp.dest('dist/pages/services/js'));
 
     let buildHtml = gulp.src('app/pages/services/**/*.html')
         .pipe(gulp.dest('dist/pages/services'));
- 
+
     let buildLibs = gulp.src("app/pages/services/libs/**/*")
         .pipe(gulp.dest("dist/pages/services/libs"))
 
     let buildRobotsFile = gulp.src("app/pages/robots.txt")
-    .pipe(gulp.dest("dist/pages"))
+        .pipe(gulp.dest("dist/pages"))
 })
 
 gulp.task('clear', function () {
