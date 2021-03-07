@@ -1,7 +1,7 @@
 $(".middle-block__pagination").slick({
     arrows: false, 
     dots: true,
-    speed: 300,
+    speed: 300, 
     slidesToShow: 1,
     centerMode: true,
     variableWidth: true,
