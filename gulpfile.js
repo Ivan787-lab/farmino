@@ -72,7 +72,7 @@ gulp.task('watch', function () {
 
 
 //для итоговой папки dist
-
+ 
 /*gulp.task('clean', function () {
     return del.sync('dist/')// удалит папку dist
 })*/
