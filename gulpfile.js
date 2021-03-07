@@ -89,7 +89,7 @@ gulp.task('img', function () {
         })))
         .pipe(dest('dist/pages/about/img'))
 }) 
-
+ 
 gulp.task('prebuild', async function () {
     let buildCss = gulp.src([
         'app/pages/about/css/**/*.css',
