@@ -1536,6 +1536,7 @@
   margin: 0 auto;
   margin-top: 130px; }
   .main-container .main-container__our-members .our-members__p {
+    text-decoration: none;
     font-family: "Lato";
     font-size: 17px;
     line-height: 26px;
