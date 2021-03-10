@@ -1330,7 +1330,7 @@
     margin: 0 5px;
     cursor: pointer;
     margin: 10px;
-    background: url(../img/rect.png) center no-repeat;
+    background: url(../gallery-img/rect.png) center no-repeat;
     background-size: cover; }
     .main-container .main-container__images .images__block:hover {
       background: -o-linear-gradient(115.76deg, #7FB800 -9.84%, #0F9B0F 121.28%);
