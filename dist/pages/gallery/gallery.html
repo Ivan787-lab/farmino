@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="apple-touch icon" href="img/main-logo.png">
+    <link rel="stylesheet" href="libs/slider/slick.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="описания для meta данных">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/main-logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍃farmino photogallery🍃</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <nav>
+            <div role="topbar" class="main-container__top-bar">
+                <div class="top-bar__logo">
+                    <div class="top-bar__logo__img"></div>
+                    <h1 class="top-bar__logo__h1">Farmino</h1>
+                </div>
+                <div class="top-bar__links">
+                    <a href="index.html" class="top-bar__links__link">Home</a>
+                    <div class="top-bar__links__active-page"></div>
+                    <a href="../about/about.html" target="_blank" class="top-bar__links__link">About</a>
+                    <a href="../services/services.html" target="_blank" class="top-bar__links__link">Services</a>
+                    <a href="../gallery/gallery.html" target="_blank" class="top-bar__links__link">Gallery</a>
+                    <a href="" target="_blank" class="top-bar__links__link">Contacts</a>
+                </div>
+                <div class="top-bar__search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main-container__banner">
+            <svg class="banner__svg-bg" width="1700" height="429" viewBox="0 0 1700 429" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="1700" height="429" fill="#D8D8D8" />
+                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1700" height="429">
+                    <rect width="1700" height="429" fill="white" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <rect opacity="0.8" x="-189" y="-445" width="1920" height="1280" fill="url(#pattern0)" />
+                </g>
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0" width="100" height="100"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACQAAAAAQAAAJAAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAGSgAwAEAAAAAQAAAGQAAAAA/TZm4AAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAzNJREFUeAHt3M2OozAMwHG61z3P+/W+LzXvN+c5zzhIRbCBJI6wncI/EuoXBce/GI3GbR8/0/RvmqbPxzR9y23XkGP8lTc+ZfuQ7Us2jidJaB3r/D3SAzBaUzdN6+TJu05ffGLRP6yDk8juWGl9IGDYLJauCgHDBiOVhhoEDDsMNQgYthgqEDDsMZpBwPDBaAIBww+jCgKGL0YRBAx/jEMQMGIwdkHAiMPIQMCIxdiAgBGPsYCAMQbGDALGOBgJ5I9sT9no9EkStMNiMScQMLQSsr8Fhhz2mUBOb0PKMe/Y6TvlMwn01GX1aIZVZUgM85VK3aBaB28dnJzrjpW2TnH7fTBsFktXhYBhg5HKQQ0Chh2GGgQMWwwVCBj2GM0gYPhgNIGA4YdRBQHDF6MIAoY/xiEIGDEYuyBgxGFkIGDEYmxAwIjHWEDAGANjBgFjHIwEQk99sG8f01NPy7JjWF1Z6KkPhCGhfNBTV4JYVUbCkO1L3aBax28dnJyLnvo64aX7YNgslq4KAcMGIxWAGgQMOww1CBi2GCoQMOwxmkHA8MFoAgHDD6MKAoYvRhEEDH+MQxAwYjB2QcCIw8hAwIjF2ICAEY+xgIAxBsYMAsY4GAmEnjo99bQO6uOulUtPvb42sj0sFws99Szd5ScsMeTM9NTL6d++ao0hZ0ufIegbTsGd8nMVMsO3+fmQLhAw7P5UVoOAYYeRrlUqEDBsMVQgYNhjNIOA4YPRBAKGH0YVBAxfjCIIGP4YhyBgxGDsgoARh5GBgBGLsQEBIx5jAQFjDIwZBIxxMBIIPXV66mkd1MddK5eeen1tZHtYLhZ66lm6y09YYsiZ6amX07991RpDzkZPfZvy40dOGN+qjuErXK/gXufT3r5zfGqQd56sFjbt7z1fFYh3cNoEXiG+ZpArTFYDHDXfJpCo4FoTeKX4qiBXmmwLcPR8iyDRwdUSeMX4DkGuONkS8Cjz3QUZJbijBF45vgzkypPdAx5tvhuQ0YL7P4F3iG8BucNk18CjzncGGTW4VwLvFN/cD5GJP2WbfzdWbtO/gG/3zSWZd9c4e7HQUx9s8SUQKqOjNs6ujNfxfgGAxM6f6FnQSQAAAABJRU5ErkJggg==" />
+                </defs>
+            </svg>
+            <h2 class="banner__h2">Gallery</h2>
+            <div class="banner__links">
+                <a href="../home/index.html" target="_blank" class="links__link">Home</a>
+                <div class="links__active-page"></div>
+                <a href="index.html" class="links__link">Gallery</a>
+            </div>
+        </div>
+        <div class="main-container__images">
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="images__block">
+                <svg class="main-container__images__arrows" width="126" height="126" viewBox="0 0 126 126" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M31.4961 7.87402V0H3.93701C1.76255 0 0 1.76255 0 3.93701V31.4961H7.87402V13.4252L44.4488 50L50 44.4488L13.4252 7.87402H31.4961Z"
+                        fill="white" />
+                    <path
+                        d="M122.063 0H94.5039V7.87402H112.575L76 44.4488L81.5512 50L118.126 13.4252V31.4961H126V3.93701C126 1.76255 124.237 0 122.063 0Z"
+                        fill="white" />
+                    <path
+                        d="M118.126 112.575L81.5512 76L76 81.5512L112.575 118.126H94.5039V126H122.063C124.237 126 126 124.237 126 122.063V94.5039H118.126V112.575Z"
+                        fill="white" />
+                    <path
+                        d="M44.4488 76L7.87402 112.585V94.5287H0V122.066C0 124.239 1.76255 126 3.93701 126H31.4961V118.132H13.4252L50 81.5862L44.4488 76Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+        </div>
+        <footer>
+            <div class="main-container__footer">
+                <div class="footer__text-block">
+                    <div class="footer__text-block__title">
+                        <div class="text-block__title__logo"></div>
+                        <h2 class="text-block__title__h2">Farmino</h2>
+                    </div>
+                    <p class="footer__text-block__description">
+                        Donec placerat, metus sed consectetur viverra, dolor nisl egestas ligula, ac gravida turpis orci
+                        eget quam. Aliquam nulla nisi, accumsan id sapien varius, egestas vehicula di
+                    </p>
+                    <div class="footer__text-block__social">
+                        <a href="https://instagram.com" target="_blank" class="text-block__social__link">
+                            <i class="text-block__social__link__icon fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" class="text-block__social__link">
+                            <i class="text-block__social__link__icon fab fa-facebook-f"></i> </a>
+
+                        <a href="https://youtube.com" target="_blank" class="text-block__social__link">
+                            <i class="text-block__social__link__icon fab fa-youtube"></i> </a>
+
+                        <a href="https://ru.linkedin.com/" target="_blank" class="text-block__social__link">
+                            <i class="text-block__social__link__icon fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="footer__text-block__bottom-line"><span class="bottom-line__span">Merkulove</span> ©
+                        Farmino Template All rights reserved Copyrights 2020</p>
+                </div>
+                <div class="footer__form">
+                    <div class="form__title">
+                        <h2 class="form__title__h2">Be informed!
+                            <span class="form__title__h2__span">Sign up for newsletter</span>
+                        </h2>
+                        <p class="form__title__p">Donec placerat, metus sed consectetur viverra, dolor nisl egestas
+                            ligula, ac gravida turpis</p>
+                    </div>
+                    <div class="form__send-email">
+                        <input placeholder="Email" class="send-email__input" type="email">
+                        <button class="send-email__submit-button">Submit <span class="submit-button__span">Nov</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
