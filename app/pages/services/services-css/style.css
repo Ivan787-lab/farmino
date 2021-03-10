@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0; }
- 
-/* ::selection {  
+
+/* ::selection { 
     color: white;
     background-color: #7eb8003a;
 } */
@@ -55,7 +55,7 @@
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__img {
         width: 42px;
         height: 41px;
-        background: url(../img/main-logo.png) center no-repeat;
+        background: url(../services-img/main-logo.png) center no-repeat;
         background-size: cover; }
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__h1 {
         margin-left: 10px;
@@ -898,7 +898,7 @@
         margin: 0 30px;
         outline: none; }
         .main-container .main-container__blog-container .blog-container__content .blog-container__content__block .content__block__bg {
-          background: url(../img/rect.png) center no-repeat;
+          background: url(../services-img/rect.png) center no-repeat;
           background-size: cover;
           width: 380px;
           height: 306px;
@@ -1051,7 +1051,7 @@
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__logo {
           width: 62px;
           height: 61px;
-          background: url(../img/main-logo.png) center no-repeat;
+          background: url(../services-img/main-logo.png) center no-repeat;
           background-size: cover; }
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__h2 {
           margin-left: 10px;
@@ -1224,3 +1224,534 @@
           .main-container .main-container__footer .footer__form .form__send-email .send-email__submit-button .submit-button__span {
             font-weight: bold;
             margin-left: 5px; }
+
+.main-container .main-container__top-bar .top-bar__links .top-bar__links__active-page {
+  left: 848px; }
+
+.main-container .main-container__about-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  height: 429px;
+  margin-top: 100px; }
+  .main-container .main-container__about-us .about-us__svg-bg {
+    position: absolute;
+    z-index: 0; }
+  .main-container .main-container__about-us .about-us__h1 {
+    font-size: 82px;
+    position: relative;
+    z-index: 1;
+    line-height: 98px;
+    color: #1d4d4f;
+    margin: 125px 0 0 250px;
+    font-weight: normal; }
+  .main-container .main-container__about-us .about-us__links {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 250px; }
+    .main-container .main-container__about-us .about-us__links .links__active-page {
+      background: #7fb800;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 10px; }
+    .main-container .main-container__about-us .about-us__links .about-us__links__link {
+      font-family: "Lato";
+      font-size: 17px;
+      line-height: 20px;
+      color: #443737;
+      text-decoration: none; }
+
+.main-container .main-container__facts-about-farmino {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px; }
+  .main-container .main-container__facts-about-farmino .facts-about-farmino__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__about-p {
+        font-family: "Lato";
+        font-size: 17px;
+        line-height: 26px;
+        color: #7fb800;
+        margin: 10px 0; }
+      .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__h2 {
+        font-size: 60px;
+        line-height: 76px;
+        color: #1d4d4f;
+        width: 446px;
+        height: 152px;
+        margin: 10px 0; }
+        .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__h2 .content__title-text__h2__span {
+          -webkit-text-decoration: underline #7fb800;
+                  text-decoration: underline #7fb800; }
+      .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__short-description {
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 26px;
+        color: #443737;
+        width: 655px;
+        margin: 10px 0; }
+      .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__watch-video {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 10px 0; }
+        .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__watch-video .watch-video__icon {
+          background: #ffffff;
+          border: 1px solid #fab522;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%; }
+        .main-container .main-container__facts-about-farmino .facts-about-farmino__content .content__title-text .content__title-text__watch-video .watch-video__p {
+          font-family: "Lato";
+          font-size: 17px;
+          line-height: 26px;
+          color: #443737;
+          margin-left: 10px; }
+  .main-container .main-container__facts-about-farmino .facts-about-farmino__counters {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 50px; }
+    .main-container .main-container__facts-about-farmino .facts-about-farmino__counters .counters__circle {
+      background: #e2f6b9;
+      width: 81px;
+      height: 81px;
+      border-radius: 50%; }
+
+.main-container .main-container__photogallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .main-container .main-container__photogallery .photogallery__p {
+    font-family: "Lato";
+    font-size: 17px;
+    line-height: 26px;
+    color: #7fb800; }
+  .main-container .main-container__photogallery .photogallery__h2 {
+    font-size: 60px;
+    line-height: 76px;
+    color: #1d4d4f; }
+    .main-container .main-container__photogallery .photogallery__h2 .photogallery__h2__span {
+      -webkit-text-decoration: underline #7fb800;
+              text-decoration: underline #7fb800; }
+  .main-container .main-container__photogallery .photogallery__photos {
+    width: 1700px;
+    height: 720px;
+    margin-top: 50px; }
+    .main-container .main-container__photogallery .photogallery__photos .photos__img {
+      width: 410px;
+      height: 350px;
+      margin: 5px; }
+
+.main-container .main-container__company-history {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 250px; }
+  .main-container .main-container__company-history .company-history__title-p {
+    font-family: "Lato";
+    font-size: 17px;
+    line-height: 26px;
+    color: #7fb800;
+    margin-left: 450px; }
+  .main-container .main-container__company-history .company-history__title-h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 76px;
+    color: #1d4d4f;
+    width: 790px;
+    margin-left: 450px; }
+    .main-container .main-container__company-history .company-history__title-h2 .companie-history__title-h2__span {
+      -webkit-text-decoration: underline #7fb800;
+              text-decoration: underline #7fb800; }
+  .main-container .main-container__company-history .company-history__timeline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 70px 0 10px 0;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    width: 1400px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .main-container .main-container__company-history .company-history__timeline > svg {
+      margin: 0 5px;
+      cursor: pointer; }
+  .main-container .main-container__company-history .company-history__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    width: 1400px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px; }
+    .main-container .main-container__company-history .company-history__content .company-history__content__block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 920px;
+      margin: 0 10px;
+      margin-left: 25px; }
+      .main-container .main-container__company-history .company-history__content .company-history__content__block .company-history__content__block__year-h2 {
+        margin-bottom: 10px; }
+      .main-container .main-container__company-history .company-history__content .company-history__content__block .company-history__content__block__p {
+        margin-bottom: 10px;
+        font-family: "Lato"; }
+      .main-container .main-container__company-history .company-history__content .company-history__content__block .company-history__content__block__short-desc-p {
+        font-family: "Lato";
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 26px;
+        color: #443737; }
+
+.main-container .main-container__our-members {
+  width: 1180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-top: 130px; }
+  .main-container .main-container__our-members .our-members__p {
+    font-family: "Lato";
+    font-size: 17px;
+    line-height: 26px;
+    color: #7fb800; }
+  .main-container .main-container__our-members .our-members__h2 {
+    font-size: 60px;
+    line-height: 76px;
+    color: #1d4d4f; }
+    .main-container .main-container__our-members .our-members__h2 .our-members__h2__span {
+      -webkit-text-decoration: underline #7fb800;
+              text-decoration: underline #7fb800; }
+  .main-container .main-container__our-members .our-members__cards-of-members {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px; }
+    .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card {
+      width: 258px;
+      height: 358px;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; }
+      .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card .card__image-of-fermer {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        background: url(../services-img/rect.png) center no-repeat;
+        background-size: cover; }
+        .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card .card__image-of-fermer .card__image-of-fermer-mask {
+          opacity: 0.4;
+          border-radius: 50%;
+          width: 250px;
+          height: 250px;
+          background: #d8d8d8; }
+      .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card .card__name-of-member {
+        margin: 20px 0 10px 0; }
+      .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card .card__position-in-the-company {
+        font-family: 'Lato';
+        font-style: italic;
+        font-size: 17px;
+        line-height: 26px;
+        color: #fab522; }
+
+.main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .main-container .main-container__top-bar .top-bar__links .top-bar__links__active-page {
+    left: 965px; }
+  .main-container .main-container__services {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px; }
+    .main-container .main-container__services .services__svg-bg {
+      position: relative;
+      z-index: 0; }
+    .main-container .main-container__services .services__h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 82px;
+      line-height: 98px;
+      color: #1d4d4f;
+      top: -300px;
+      left: 250px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+    .main-container .main-container__services .services__links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 150px;
+      position: relative;
+      z-index: 1;
+      top: -290px;
+      left: 250px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .main-container .main-container__services .services__links .links__link {
+        font-family: "Lato";
+        font-size: 17px;
+        line-height: 20px;
+        color: #443737;
+        text-decoration: none; }
+      .main-container .main-container__services .services__links .links__active-page {
+        background: #7fb800;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%; }
+  .main-container .main-container__slider-services {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1170px;
+    overflow: hidden;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 0 auto;
+    height: 790px; }
+    .main-container .main-container__slider-services .slider-services__items {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      outline: none; }
+      .main-container .main-container__slider-services .slider-services__items .slider-services__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 1170px;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .main-container .main-container__slider-services .slider-services__items .slider-services__item .slider-services__item__card {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 5px;
+          background: #ffffff;
+          -webkit-box-shadow: 0px 0px 15px rgba(127, 184, 0, 0.15);
+                  box-shadow: 0px 0px 15px rgba(127, 184, 0, 0.15);
+          border-radius: 20px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 280px;
+          height: 349px;
+          padding: 10px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          font-family: 'Lato'; }
+          .main-container .main-container__slider-services .slider-services__items .slider-services__item .slider-services__item__card .slider-services__item__card__h2 {
+            margin: 20px 0; }
+    .main-container .main-container__slider-services .slick-dots {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 150px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 20px; }
+      .main-container .main-container__slider-services .slick-dots > li {
+        list-style-type: none; }
+      .main-container .main-container__slider-services .slick-dots li > button {
+        background: white;
+        font-family: 'Lato';
+        border: none;
+        outline: none;
+        color: #443737;
+        cursor: pointer; }

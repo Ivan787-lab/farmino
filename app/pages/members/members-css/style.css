@@ -55,7 +55,7 @@
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__img {
         width: 42px;
         height: 41px;
-        background: url(../img/main-logo.png) center no-repeat;
+        background: url(../members-img/main-logo.png) center no-repeat;
         background-size: cover; }
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__h1 {
         margin-left: 10px;
@@ -898,7 +898,7 @@
         margin: 0 30px;
         outline: none; }
         .main-container .main-container__blog-container .blog-container__content .blog-container__content__block .content__block__bg {
-          background: url(../img/rect.png) center no-repeat;
+          background: url(../members-img/rect.png) center no-repeat;
           background-size: cover;
           width: 380px;
           height: 306px;
@@ -1051,7 +1051,7 @@
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__logo {
           width: 62px;
           height: 61px;
-          background: url(../img/main-logo.png) center no-repeat;
+          background: url(../members-img/main-logo.png) center no-repeat;
           background-size: cover; }
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__h2 {
           margin-left: 10px;
@@ -1226,15 +1226,9 @@
             margin-left: 5px; }
 
 .main-container .main-container__top-bar .top-bar__links .top-bar__links__active-page {
-  background: #7fb800;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  position: absolute;
-  left: 1086px; }
+  left: 1085px; }
 
-.main-container .main-container__banner {
-  width: 90%;
+.main-container .main-container__our-fermers-banner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1244,53 +1238,112 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 429px;
-  border: 1px solid #000;
+  width: 90%;
   margin: 100px auto 0; }
-  .main-container .main-container__banner .banner__h2 {
+  .main-container .main-container__our-fermers-banner .our-fermers-banner__svg-bg {
     position: relative;
-    z-index: 1;
+    z-index: 0; }
+  .main-container .main-container__our-fermers-banner .our-fermers-banner__h2 {
     font-size: 82px;
     line-height: 98px;
-    font-weight: normal;
-    color: #1D4D4F;
-    margin: 100px 0 0 150px;
+    color: #1d4d4f;
+    position: relative;
+    z-index: 1;
+    top: -325px;
+    left: 150px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content; }
-  .main-container .main-container__banner .banner__links {
-    position: relative;
-    z-index: 1;
-    margin: 10px 0 0 150px;
+  .main-container .main-container__our-fermers-banner .our-fermers-banner__links {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
-    .main-container .main-container__banner .banner__links .links__active-page {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #7fb800;
-      margin: 0 10px; }
-    .main-container .main-container__banner .banner__links .links__link {
-      font-family: 'Lato';
+            align-items: center;
+    position: relative;
+    z-index: 1;
+    top: -300px;
+    left: 155px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+    .main-container .main-container__our-fermers-banner .our-fermers-banner__links .links__link {
+      font-family: "Lato";
       font-size: 17px;
       line-height: 20px;
       color: #443737;
       text-decoration: none; }
+    .main-container .main-container__our-fermers-banner .our-fermers-banner__links .links__active-page {
+      background: #7fb800;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 10px; }
 
-.main-container .main-container__images {
+.main-container .main-container__career-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1180px;
+  margin: 50px auto 0;
+  height: 450px; }
+  .main-container .main-container__career-banner .career-banner__svg-bg {
+    position: absolute;
+    z-index: 0; }
+  .main-container .main-container__career-banner .career-banner__h2 {
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    color: #1D4D4F;
+    top: 120px;
+    left: 100px;
+    width: 400px; }
+    .main-container .main-container__career-banner .career-banner__h2 .career-banner__h2__span {
+      font-weight: 600; }
+  .main-container .main-container__career-banner .career-banner__about-button {
+    position: relative;
+    z-index: 1;
+    background: -o-linear-gradient(115.76deg, #7FB800 -9.84%, #0F9B0F 121.28%);
+    background: linear-gradient(334.24deg, #7FB800 -9.84%, #0F9B0F 121.28%);
+    -webkit-box-shadow: 0 4px 15px rgba(127, 184, 0, 0.401852);
+            box-shadow: 0 4px 15px rgba(127, 184, 0, 0.401852);
+    border-radius: 29px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 204px;
+    height: 52px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Rubik";
+    font-size: 1.5em;
+    top: 150px;
+    left: 100px; }
+
+.main-container .main-container__team-members {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1298,16 +1351,12 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  width: 1185px;
-  height: 1345px;
-  max-width: 1185px;
-  max-height: 1345px;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  overflow: auto;
-  margin-top: 100px; }
-  .main-container .main-container__images .images__block {
+  width: 1180px;
+  margin: 80px auto 50px; }
+  .main-container .main-container__team-members .team-members__member {
+    width: 280px;
+    height: 358px;
+    margin: 5px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1317,23 +1366,37 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 355px;
-    height: 435px;
-    margin: 0 5px;
-    cursor: pointer;
-    margin: 10px;
-    background: url(../img/rect.png) center no-repeat;
-    background-size: cover; }
-    .main-container .main-container__images .images__block:hover {
-      background: -o-linear-gradient(115.76deg, #7FB800 -9.84%, #0F9B0F 121.28%);
-      background: linear-gradient(334.24deg, #7FB800 -9.84%, #0F9B0F 121.28%);
-      mix-blend-mode: normal;
-      opacity: 0.7; }
+    cursor: pointer; }
+    .main-container .main-container__team-members .team-members__member .member__img-members {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 0;
+      background: url("../members-img/rect.png") center;
+      background-size: cover; }
+      .main-container .main-container__team-members .team-members__member .member__img-members .member__img-member__mask {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        background: #D8D8D8;
+        opacity: 0.5; }
+    .main-container .main-container__team-members .team-members__member .member__name-of-member {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      color: #1D4D4F;
+      margin: 10px 0; }
+    .main-container .main-container__team-members .team-members__member .member__position-in-the-company {
+      font-family: 'Lato';
+      font-style: italic;
+      color: #FAB522; }

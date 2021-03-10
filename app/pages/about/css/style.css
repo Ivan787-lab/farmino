@@ -55,7 +55,7 @@
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__img {
         width: 42px;
         height: 41px;
-        background: url(../img/main-logo.png) center no-repeat;
+        background: url(../gallery-img/main-logo.png) center no-repeat;
         background-size: cover; }
       .main-container .main-container__top-bar .top-bar__logo .top-bar__logo__h1 {
         margin-left: 10px;
@@ -898,7 +898,7 @@
         margin: 0 30px;
         outline: none; }
         .main-container .main-container__blog-container .blog-container__content .blog-container__content__block .content__block__bg {
-          background: url(../img/rect.png) center no-repeat;
+          background: url(../gallery-img/rect.png) center no-repeat;
           background-size: cover;
           width: 380px;
           height: 306px;
@@ -1051,7 +1051,7 @@
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__logo {
           width: 62px;
           height: 61px;
-          background: url(../img/main-logo.png) center no-repeat;
+          background: url(../gallery-img/main-logo.png) center no-repeat;
           background-size: cover; }
         .main-container .main-container__footer .footer__text-block .footer__text-block__title .text-block__title__h2 {
           margin-left: 10px;
@@ -1582,7 +1582,7 @@
         border-radius: 50%;
         width: 250px;
         height: 250px;
-        background: url(../img/rect.png) center no-repeat;
+        background: url(../gallery-img/rect.png) center no-repeat;
         background-size: cover; }
         .main-container .main-container__our-members .our-members__cards-of-members .cards-of-members__card .card__image-of-fermer .card__image-of-fermer-mask {
           opacity: 0.4;
