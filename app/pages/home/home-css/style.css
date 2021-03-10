@@ -726,8 +726,6 @@
           border: none;
           display: none; }
   .main-container .main-container__reviews-block {
-    position: relative;
-    z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -766,6 +764,8 @@
       overflow: hidden;
       max-width: 1380px;
       min-width: 1180px;
+      min-height: 240px;
+      max-height: 240px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
