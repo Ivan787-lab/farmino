@@ -726,6 +726,8 @@
           border: none;
           display: none; }
   .main-container .main-container__reviews-block {
+    position: relative;
+    z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

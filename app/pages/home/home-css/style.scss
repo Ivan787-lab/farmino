@@ -687,6 +687,8 @@ $green_color: #7fb800 ;
         }
     }
     .main-container__blog-container {
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         margin-top: 200px;
