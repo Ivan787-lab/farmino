@@ -880,7 +880,6 @@ $green_color: #7fb800;
         .main-container__top-bar {
             position: relative;
             padding: 5px;
-            width: 100%;
             width: 320px;
             flex-direction: column;
             justify-content: center;
@@ -918,15 +917,14 @@ $green_color: #7fb800;
         }
         .main-container__benefits-container {
             width: 320px;
-            margin-top: 220px;
             .benefits-container__short-desription {
                 width: max-content;
                 margin-left: 0;
 
                 .short-description__h2 {
                     font-size: 30px;
-                    width: 100%;
-                    // text-align: center;
+                    width: 320px;
+                    text-align: center;
 
                     .short-description__h2__span {
                         color: $green_color;
@@ -1053,12 +1051,12 @@ $green_color: #7fb800;
                     }
                     .text-block__title-h2 {
                         margin: 0 auto 0 -15px;
-                        width: 320px;
+                        width: 280px;
                         text-align: center;
                     }
                     .text-block__second-title-p {
                         margin: 15px auto 0;
-                        width: 320px;
+                        width: 280px;
                     }
                 }
                 .why-choose-us__diagram-container {
@@ -1115,10 +1113,10 @@ $green_color: #7fb800;
                     }
                     .content__block__article {
                         width: 280px;
-    
+
                         .article__meta {
                             width: 280px;
-    
+
                             .article__meta__date {
                                 width: 280px;
                             }
@@ -1138,8 +1136,8 @@ $green_color: #7fb800;
                         }
                     }
                 }
-                
-    
+
+
             }
             .blog-container__our-partners {
                 flex-direction: column;
@@ -1170,9 +1168,11 @@ $green_color: #7fb800;
             .footer__text-block {
                 max-width: max-content;
                 height: 70%;
-                margin: 250px auto 0;
+                // margin: 250px auto 0;
                 text-align: center;
                 width: 320px;
+                order: 1;
+                margin-bottom: -700px;
                 .footer__text-block__title {
                     display: flex;
                     align-items: center;
@@ -1183,13 +1183,14 @@ $green_color: #7fb800;
                 }
                 .footer__text-block__social {
                     margin: 20px auto 0;
+
                 }
             }
             .footer__form {
                 width: 320px;
                 height: 716px;
                 margin: 100px auto 0;
-
+                order: 0;
                 .form__title {
                     margin-top: 200px;
 
@@ -1212,6 +1213,5 @@ $green_color: #7fb800;
                 }
             }
         }
-
     }
 }
