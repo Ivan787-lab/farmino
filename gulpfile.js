@@ -12,24 +12,24 @@ var gulp = require('gulp'),//npm i gulp --save-dev
     autoprefixer = require('gulp-autoprefixer') //npm i --save-dev gulp-autoprefixer
 
 gulp.task('scss', function () { // Создаем таск "sass"
-    return gulp.src('app/pages/gallery/css/**/*.scss') // Берем источник
+    return gulp.src('app/pages/home/home-css/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         })) // Создаем префиксы
-        .pipe(gulp.dest('app/pages/gallery/css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('app/pages/home/home-css')) // Выгружаем результата в папку app/css
         .pipe(browser_sync.reload({
             stream: true
         }))
 });
 
 gulp.task('scss', function () { // Создаем таск "sass"
-    return gulp.src('app/pages/gallery/css/**/*.scss') // Берем источник
+    return gulp.src('app/pages/home/home-css/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         })) // Создаем префиксы
-        .pipe(gulp.dest('app/pages/gallery/css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('app/pages/home/home-css')) // Выгружаем результата в папку app/css
         .pipe(browser_sync.reload({
             stream: true
         }))
@@ -40,21 +40,21 @@ gulp.task('scss', function () { // Создаем таск "sass"
 gulp.task('browser_sync', function () {
     browser_sync({
         server: {
-            baseDir: 'app/pages/gallery',
+            baseDir: 'app/pages/home',
         },
         notify: false
     })
 })
 
 gulp.task('html', function () {
-    return gulp.src('app/pages/gallery/**/*.html')
+    return gulp.src('app/pages/home/**/*.html')
         .pipe(browser_sync.reload({
             stream: true
         }))
 })
 
 gulp.task('scripts', function () {
-    return gulp.src(['app/pages/gallery/js/**/*.js', 'app/pages/gallery/libs**/*.js'])
+    return gulp.src(['app/pages/home/home-js/**/*.js', 'app/pages/home/home-libs**/*.js'])
         .pipe(browser_sync.reload({
             stream: true
         }))
@@ -62,9 +62,9 @@ gulp.task('scripts', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('app/pages/gallery/css/**/*.scss', gulp.parallel('scss'));
-    gulp.watch('app/pages/gallery/**/*.html', gulp.parallel('html'))
-    gulp.watch(['app/pages/gallery/js/**/*.js', 'app/pages/gallery/libs/**/*.js'], gulp.parallel('scripts'))
+    gulp.watch('app/pages/home/home-css/**/*.scss', gulp.parallel('scss'));
+    gulp.watch('app/pages/home/**/*.html', gulp.parallel('html'))
+    gulp.watch(['app/pages/home/home-js/**/*.js', 'app/pages/home/home-libs/**/*.js'], gulp.parallel('scripts'))
 })
 
 //вводил gulp watch
@@ -77,7 +77,7 @@ gulp.task('watch', function () {
 })*/
 
 gulp.task('img', function () {
-    return gulp.src('app/pages/gallery/img/**/*')
+    return gulp.src('app/pages/home/home-img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
@@ -86,24 +86,24 @@ gulp.task('img', function () {
             }],
             use: [pngquant()]
         })))
-        .pipe(dest('dist/pages/gallery/img'))
+        .pipe(dest('dist/pages/home/home-img'))
 })
 
 gulp.task('prebuild', async function () {
     let buildCss = gulp.src([
-        'app/pages/gallery/css/**/*.css',
-        'app/pages/gallery/css/**/*.scss',
+        'app/pages/home/home-css/**/*.css',
+        'app/pages/home/home-css/**/*.scss',
     ])
-        .pipe(gulp.dest('dist/pages/gallery/css'))
+        .pipe(gulp.dest('dist/pages/home/home-css'))
 
-    let buildJs = gulp.src('app/pages/gallery/js/**/*.js')
-        .pipe(gulp.dest('dist/pages/gallery/js'));
+    let buildJs = gulp.src('app/pages/home/home-js/**/*.js')
+        .pipe(gulp.dest('dist/pages/home/home-js'));
 
-    let buildHtml = gulp.src('app/pages/gallery/**/*.html')
-        .pipe(gulp.dest('dist/pages/gallery'));
+    let buildHtml = gulp.src('app/pages/home/**/*.html')
+        .pipe(gulp.dest('dist/pages/home/'));
 
-    let buildLibs = gulp.src("app/pages/gallery/libs/**/*")
-        .pipe(gulp.dest("dist/pages/gallery/libs"))
+    let buildLibs = gulp.src("app/pages/home/home-libs/**/*")
+        .pipe(gulp.dest("dist/pages/home/home-libs"))
 
     let buildRobotsFile = gulp.src("app/pages/robots.txt")
         .pipe(gulp.dest("dist/pages"))
