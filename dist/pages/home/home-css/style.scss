@@ -873,6 +873,349 @@ $green_color: #7fb800;
         }
     }
 }
+@media(max-width : 1024px) {
+    .main-container {
+        width: 1014px;
+        .main-container__top-bar {
+            position: relative;
+            padding: 5px;
+            width: 1014px;
+            flex-direction: row;
+            justify-content: center;
+
+            .top-bar__logo {
+                margin: 10px auto;
+            }
+            .top-bar__links {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+
+                .top-bar__links__link {
+                    margin: 10px;
+                    font-size: 1.3em;
+                }
+                .top-bar__links__active-page {
+                    position: absolute;
+                    left: 200px;
+                    top: 85px;
+                }
+            }
+
+            .top-bar__search-icon {
+                margin: 0 auto;
+            }
+
+        }
+        .section__right-circle {
+            display: none;
+        }
+        .benefits-container__rect {
+            display: none;
+        }
+        .main-container__benefits-container {
+            width: 1014px;
+            .benefits-container__short-desription {
+                width: max-content;
+                margin-left: 0;
+
+                .short-description__h2 {
+                    font-size: 30px;
+                    width: 1014px;
+                    text-align: center;
+
+                    .short-description__h2__span {
+                        color: $green_color;
+                    }
+                }
+
+                .short-description__p {
+                    font-size: 17px;
+                    width: 1014px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+                .short-descripton__video {
+                    flex-direction: column;
+                    margin-top: 30px;
+                    align-items: center;
+
+                    .short-descripton__video__watch-demo {
+                        width: max-content;
+                        margin-left: -60px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .benefits-container__rect {
+                display: none;
+            }
+            .benefits-container__background-text {
+                left: 60%;
+                top: 95%;
+                font-size: 56px;
+                margin-left: -150px;
+            }
+            .benefits-container__all-benefits {
+                flex-direction: column;
+                margin: 20px auto;
+
+                .all-benefits__card {
+                    margin: 10px 0;
+                    width: 915px;
+
+                }
+            }
+        }
+        .main-container__about-us-section {
+            .about-us-section__title {
+                .about-us-section__title__h2 {
+                    width: 1014px;
+                }
+            }
+
+            .about-us-section__middle-block {
+                flex-direction: column;
+
+                .middle-block__about-block {
+                    flex-direction: column;
+                    width: 1014px;
+
+                    .about-block__h2 {
+                        text-align: center;
+                    }
+                    .about-block__p {
+                        text-align: center;
+                    }
+
+                    .about-block__points {
+                        margin: 0 auto;
+                    }
+                }
+                .middle-block__pagination {
+                    width: 1014px;
+                    margin: 20px auto 0;
+                    border-radius: 20px;
+                    .pagination__service {
+                        width: 1014px;
+                        min-height: 545px;
+                    }
+                    .slick-dots {
+                        margin: 20px auto 0;
+                    }
+                    .pagination__service__content__h2 {
+                        margin-top: 20px;
+                        width: 458px;
+                    }
+                    .pagination__service__content__p {
+                        margin-top: 10px;
+                        width: 458px;
+                    }
+                }
+            }
+        }
+        .main-container__banner {
+            width: 1014px;
+            .banner__svg-bg {
+                display: none;
+            }
+            .banner__svg-rect {
+                display: none;
+            }
+            .banner__h2_farmino {
+                font-size: 70px;
+                margin: 0 auto;
+            }
+            .banner__h2_organic {
+                font-size: 70px;
+                margin: 0 auto;
+
+            }
+            .banner__about-farmino-button {
+                margin: 10px auto 0;
+            }
+            .banner__social-container {
+                margin: 20px auto 0;
+            }
+        }
+        .main-container__why-choose-us {
+            margin-top: -250px;
+            width: 1014px;
+            display: flex;
+
+            .why-choose-us__content {
+                width: 1014px;
+                .why-choose-us__content__text-block {
+                    .text-block__title-p {
+                        margin: 0 auto;
+                    }
+                    .text-block__title-h2 {
+                        margin: 0 auto 0 -15px;
+                        width: 1004px;
+                        text-align: center;
+                    }
+                    .text-block__second-title-p {
+                        margin: 15px auto 0;
+                        width: 1004px;
+                    }
+                }
+                .why-choose-us__diagram-container {
+                    flex-direction: column;
+                    width: 1004px;
+                    margin: 0 auto;
+
+                    .diagram-container__diagram {
+                        flex-direction: column;
+                        margin: 20px 50px;
+                    }
+                }
+            }
+        }
+        .main-container__gallery {
+            width: 1014px;
+            .gallery__images {
+                max-width: 320px;
+
+                .gallery__images__img {
+                    width: 958px;
+                }
+            }
+        }
+        .main-container__blog-container {
+            margin-top: 200px;
+            .blog-container__title {
+                font-family: "Lato";
+                margin: 0 auto;
+
+                .blog-container__title__p {
+                    text-align: center;
+                }
+
+                .blog-container__title__h2 {
+                    font-size: 60px;
+                    width: 1014px;
+                    text-align: center;
+                }
+            }
+            .blog-container__content {
+                max-width: 1014px;
+                min-width: 1014px;
+
+                .blog-container__content__block {
+                    width: 1004px;
+                    margin: 0 20px;
+
+                    .content__block__bg {
+                        width: 954px;
+                    }
+                    .content__block__article {
+                        width: 954px;
+                    }
+                    .content__block__article {
+                        width: 954px;
+
+                        .article__meta {
+                            width: 954px;
+
+                            .article__meta__date {
+                                width: 954px;
+                            }
+                            .article__meta__author {
+                                width: 954px;
+                                margin: 0;
+                            }
+                        }
+                        .article__short-text {
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 30px;
+                            color: #1d4d4f;
+                            text-overflow: clip;
+                            max-width: 415px;
+                            white-space: none;
+                        }
+                    }
+                }
+
+
+            }
+            .blog-container__our-partners {
+                flex-direction: column;
+                .our-partners__h2 {
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #1d4d4f;
+                }
+                .our-partners__gallery {
+                    flex-direction: column;
+                    margin: 50px auto 0;
+
+                    .our-partners__gallery__img {
+                        width: 954px;
+                        height: 300px;
+                        margin: 10px auto;
+                    }
+                }
+            }
+
+        }
+        .main-container__footer {
+            width: 1014px;
+            height: 486px;
+            display: flex;
+            flex-direction: column;
+
+            .footer__text-block {
+                max-width: max-content;
+                height: 70%;
+                // margin: 250px auto 0;
+                text-align: center;
+                width: 768px;
+                order: 1;
+                margin-bottom: -700px;
+                .footer__text-block__title {
+                    display: flex;
+                    align-items: center;
+                }
+                .footer__text-block__description {
+                    text-align: center;
+                    width: 758px;
+                }
+                .footer__text-block__social {
+                    margin: 20px auto 0;
+
+                }
+            }
+            .footer__form {
+                width: 1014px;
+                height: 716px;
+                margin: 100px auto 0;
+                order: 0;
+                .form__title {
+                    margin-top: 200px;
+
+                    .form__title__h2 {
+                        width: 758px;
+                        text-align: center;
+                    }
+
+                    .form__title__p {
+                        width: 758px;
+                    }
+                }
+                .form__send-email {
+                    margin-top: 50px;
+
+                    .send-email__input {
+                        width: 758px;
+
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width : 768px) {
     .main-container {
         width: 758px;
