@@ -47,7 +47,7 @@ gulp.task('browser_sync', function () {
 })
 
 gulp.task('html', function () {
-    return gulp.src('app/pages/about/**/*.html')
+    return gulp.src('app/pages/about/about.html')
         .pipe(browser_sync.reload({
             stream: true
         }))
@@ -64,7 +64,8 @@ gulp.task('scripts', function () {
 gulp.task('watch', function () {
     gulp.watch('app/pages/about/about-css/**/*.scss', gulp.parallel('scss'));
     gulp.watch('app/pages/about/**/*.html', gulp.parallel('html'))
-    gulp.watch(['app/pages/about/about-js/**/*.js', 'app/pages/about/about-libs/**/*.js'], gulp.parallel('scripts'))
+    //gulp.watch(['app/pages/about/about-js/**/*.js', 'app/pages/about/about-libs/**/*.js' ], gulp.parallel('scripts'))
+    gulp.watch(['app/pages/about/about-js/**/*.js'], gulp.parallel('scripts'))
 })
 
 //вводил gulp watch
@@ -102,8 +103,8 @@ gulp.task('prebuild', async function () {
     let buildHtml = gulp.src('app/pages/about/**/*.html')
         .pipe(gulp.dest('dist/pages/about/'));
 
-    let buildLibs = gulp.src("app/pages/about/about-libs/**/*")
-        .pipe(gulp.dest("dist/pages/about/about-libs"))
+    //let buildLibs = gulp.src("app/pages/about/about-libs/**/*")
+        //.pipe(gulp.dest("dist/pages/about/about-libs"))
 
     let buildRobotsFile = gulp.src("app/pages/robots.txt")
         .pipe(gulp.dest("dist/pages"))
