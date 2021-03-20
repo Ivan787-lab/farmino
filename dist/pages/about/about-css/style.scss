@@ -1,0 +1,720 @@
+@import "../../home/home-css/style.scss";
+
+.main-container {
+    .main-container__top-bar {
+        .top-bar__links {
+            .top-bar__links__active-page {
+                left: 848px;
+            }
+        }
+    }
+    .main-container__about-us {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 100px auto 0;
+        height: 429px;
+        .about-us__svg-bg {
+            position: absolute;
+            z-index: 0;
+        }
+        .about-us__h1 {
+            font-size: 82px;
+            position: relative;
+            z-index: 1;
+            line-height: 98px;
+            color: #1d4d4f;
+            margin: 125px 0 0 250px;
+            font-weight: normal;
+        }
+        .about-us__links {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            margin-left: 250px;
+
+            .links__active-page {
+                background: #7fb800;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                position: relative;
+                margin: 0 10px;
+            }
+            .about-us__links__link {
+                font-family: "Lato";
+                font-size: 17px;
+                line-height: 20px;
+                color: #443737;
+                text-decoration: none;
+            }
+        }
+    }
+    .main-container__facts-about-farmino {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 150px;
+
+        .facts-about-farmino__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content__title-text {
+                display: flex;
+                flex-direction: column;
+
+                .content__title-text__about-p {
+                    font-family: "Lato";
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #7fb800;
+                    margin: 10px 0;
+                }
+                .content__title-text__h2 {
+                    font-size: 60px;
+                    line-height: 76px;
+                    color: #1d4d4f;
+                    width: 446px;
+                    height: 152px;
+                    margin: 10px 0;
+
+                    .content__title-text__h2__span {
+                        text-decoration: underline #7fb800;
+                    }
+                }
+                .content__title-text__short-description {
+                    font-family: "Lato";
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #443737;
+                    width: 655px;
+                    margin: 10px 0;
+                }
+                .content__title-text__watch-video {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+
+                    .watch-video__icon {
+                        background: #ffffff;
+                        border: 1px solid #fab522;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 50%;
+                    }
+                    .watch-video__p {
+                        font-family: "Lato";
+                        font-size: 17px;
+                        line-height: 26px;
+                        color: #443737;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .facts-about-farmino__counters {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+
+            .counters__circle {
+                background: #e2f6b9;
+                width: 81px;
+                height: 81px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .main-container__photogallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .photogallery__p {
+            text-decoration: none;
+            font-family: "Lato";
+            font-size: 17px;
+            line-height: 26px;
+            color: #7fb800;
+        }
+        .photogallery__h2 {
+            font-size: 60px;
+            line-height: 76px;
+            color: #1d4d4f;
+
+            .photogallery__h2__span {
+                text-decoration: underline #7fb800;
+            }
+        }
+        .photogallery__photos {
+            width: 1700px;
+            height: 720px;
+            margin-top: 50px;
+
+            .photos__img {
+                width: 410px;
+                height: 350px;
+                margin: 5px;
+            }
+        }
+    }
+    .main-container__company-history {
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+
+        .company-history__title-p {
+            font-family: "Lato";
+            font-size: 17px;
+            line-height: 26px;
+            color: #7fb800;
+            margin-left: 450px;
+        }
+        .company-history__title-h2 {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 76px;
+            color: #1d4d4f;
+            width: 790px;
+            margin-left: 450px;
+
+            .companie-history__title-h2__span {
+                text-decoration: underline #7fb800;
+            }
+        }
+        .company-history__timeline {
+            display: flex;
+            align-items: center;
+            margin: 70px 0 10px;
+            align-self: flex-end;
+            width: 1400px;
+            justify-content: space-between;
+
+            & > svg {
+                margin: 0 5px;
+                cursor: pointer;
+            }
+        }
+        .company-history__content {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            width: 1400px;
+            justify-content: space-between;
+            padding: 10px;
+
+            .company-history__content__block {
+                display: flex;
+                flex-direction: column;
+                width: 920px;
+                margin: 0 10px 0 25px;
+
+                .company-history__content__block__year-h2 {
+                    margin-bottom: 10px;
+                }
+
+                .company-history__content__block__p {
+                    margin-bottom: 10px;
+                    font-family: "Lato";
+                }
+                .company-history__content__block__short-desc-p {
+                    font-family: "Lato";
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #443737;
+                }
+            }
+        }
+    }
+    .main-container__our-members {
+        width: 1180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 130px auto 0;
+
+        .our-members__p {
+            text-decoration: none;
+            font-family: "Lato";
+            font-size: 17px;
+            line-height: 26px;
+            color: #7fb800;
+        }
+
+        .our-members__h2 {
+            font-size: 60px;
+            line-height: 76px;
+            color: #1d4d4f;
+
+            .our-members__h2__span {
+                text-decoration: underline #7fb800;
+            }
+        }
+
+        .our-members__cards-of-members {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            .cards-of-members__card {
+                width: 258px;
+                height: 358px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .card__image-of-fermer {
+                    border-radius: 50%;
+                    width: 250px;
+                    height: 250px;
+                    background: url('../gallery-img/rect.png') center no-repeat;
+                    background-size: cover;
+
+                    .card__image-of-fermer-mask {
+                        opacity: 0.4;
+                        border-radius: 50%;
+                        width: 250px;
+                        height: 250px;
+                        background: #d8d8d8;
+                    }
+                }
+                .card__name-of-member {
+                    margin: 20px 0 10px;
+                }
+                .card__position-in-the-company {
+                    font-family: 'Lato';
+                    font-style: italic;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #fab522;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px) {
+    .main-container {
+        .main-container__top-bar {
+            .top-bar__links {
+                .top-bar__links__active-page {
+                    left: 220px;
+                    top: 128px;
+                }
+            }
+        }
+        .main-container__about-us {
+           
+            width: 758px;
+            .about-us__h1 {
+                margin: 0;
+                text-align: center;
+            }
+            .about-us__links {
+                margin: 0;
+                .about-us__links__link {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .main-container__facts-about-farmino {
+            .facts-about-farmino__content {
+                display: flex;
+                flex-direction: column;
+                width: 758px;
+
+                .content__title-text {
+                    width: 758px;
+                    text-align: center;
+                    font-size: 16px;
+
+                    .content__title-text__h2 {
+                        width: 758px;
+                    }
+                    .content__title-text__short-description {
+                        width: 758px;
+                        margin-top: 70px;
+                    }
+                    .content__title-text__watch-video {
+                        margin: 0 auto;
+                    }
+
+                }
+                .content__rect {
+                    display: none;
+                }
+            }
+
+        }
+        .main-container__photogallery {
+            display: none;
+        }
+        .main-container__company-history {
+            width: 758px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .company-history__title-h2 {
+                margin: 0;
+                width: 758px;
+            }
+            .company-history__title-p {
+                margin: 0;
+            }
+            .company-history__timeline {
+                display: none;
+            }
+            .company-history__content {
+                width: 758px;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .company-history__content__block {
+                    width: 415px;
+                }
+            }
+
+        }
+        .main-container__our-members {
+            display: flex;
+            flex-direction: column;
+            width: 758px;
+            .our-members__h2 {
+                text-align: center;
+            }
+            .our-members__cards-of-members {
+                display: flex;
+                flex-direction: column;
+                .cards-of-members__card {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 425px) {
+    .main-container {
+        .main-container__top-bar {
+            .top-bar__links {
+                .top-bar__links__active-page {
+                    left: 250px;
+                    top: 130px;
+                }
+            }
+        }
+        .main-container__about-us {
+            .about-us__svg-bg {
+                display: none;
+            }
+            width: 415px;
+            .about-us__h1 {
+                margin: 0;
+                text-align: center;
+            }
+            .about-us__links {
+                margin: 0;
+                .about-us__links__link {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .main-container__facts-about-farmino {
+            .facts-about-farmino__content {
+                display: flex;
+                flex-direction: column;
+                width: 415px;
+
+                .content__title-text {
+                    width: 415px;
+                    text-align: center;
+                    font-size: 16px;
+
+                    .content__title-text__h2 {
+                        width: 415px;
+                    }
+                    .content__title-text__short-description {
+                        width: 415px;
+                        margin-top: 70px;
+                    }
+                    .content__title-text__watch-video {
+                        margin: 0 auto;
+                    }
+
+                }
+                .content__rect {
+                    display: none;
+                }
+            }
+
+        }
+        .main-container__photogallery {
+            display: none;
+        }
+        .main-container__company-history {
+            width: 415px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .company-history__title-h2 {
+                margin: 0;
+                width: 415px;
+            }
+            .company-history__title-p {
+                margin: 0;
+            }
+            .company-history__timeline {
+                display: none;
+            }
+            .company-history__content {
+                width: 415px;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .company-history__content__block {
+                    width: 415px;
+                }
+            }
+
+        }
+        .main-container__our-members {
+            display: flex;
+            flex-direction: column;
+            width: 415px;
+            .our-members__h2 {
+                text-align: center;
+            }
+            .our-members__cards-of-members {
+                display: flex;
+                flex-direction: column;
+                .cards-of-members__card {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 375px) {
+    .main-container {
+        .main-container__top-bar {
+            .top-bar__links {
+                .top-bar__links__active-page {
+                    left: 220px;
+                    top: 128px;
+                }
+            }
+        }
+        .main-container__about-us {
+            .about-us__svg-bg {
+                display: none;
+            }
+            width: 365px;
+            .about-us__h1 {
+                margin: 0;
+                text-align: center;
+            }
+            .about-us__links {
+                margin: 0;
+                .about-us__links__link {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .main-container__facts-about-farmino {
+            .facts-about-farmino__content {
+                display: flex;
+                flex-direction: column;
+                width: 365px;
+
+                .content__title-text {
+                    width: 365px;
+                    text-align: center;
+                    font-size: 16px;
+
+                    .content__title-text__h2 {
+                        width: 365px;
+                    }
+                    .content__title-text__short-description {
+                        width: 365px;
+                        margin-top: 70px;
+                    }
+                    .content__title-text__watch-video {
+                        margin: 0 auto;
+                    }
+
+                }
+                .content__rect {
+                    display: none;
+                }
+            }
+
+        }
+        .main-container__photogallery {
+            display: none;
+        }
+        .main-container__company-history {
+            width: 365px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .company-history__title-h2 {
+                margin: 0;
+                width: 365px;
+            }
+            .company-history__title-p {
+                margin: 0;
+            }
+            .company-history__timeline {
+                display: none;
+            }
+            .company-history__content {
+                width: 365px;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .company-history__content__block {
+                    width: 365px;
+                }
+            }
+
+        }
+        .main-container__our-members {
+            display: flex;
+            flex-direction: column;
+            width: 365px;
+            .our-members__h2 {
+                text-align: center;
+            }
+            .our-members__cards-of-members {
+                display: flex;
+                flex-direction: column;
+                .cards-of-members__card {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 320px) {
+    .main-container {
+        .main-container__top-bar {
+            .top-bar__links {
+                .top-bar__links__active-page {
+                    left: 210px;
+                    top: 128px;
+                }
+            }
+        }
+        .main-container__about-us {
+            .about-us__svg-bg {
+                display: none;
+            }
+            width: 320px;
+            .about-us__h1 {
+                margin: 0;
+                text-align: center;
+            }
+            .about-us__links {
+                margin: 0;
+                .about-us__links__link {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .main-container__facts-about-farmino {
+            .facts-about-farmino__content {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+
+                .content__title-text {
+                    width: 320px;
+                    text-align: center;
+                    font-size: 16px;
+
+                    .content__title-text__h2 {
+                        width: 320px;
+                    }
+                    .content__title-text__short-description {
+                        width: 320px;
+                        margin-top: 70px;
+                    }
+                    .content__title-text__watch-video {
+                        margin: 0 auto;
+                    }
+
+                }
+                .content__rect {
+                    display: none;
+                }
+            }
+
+        }
+        .main-container__photogallery {
+            display: none;
+        }
+        .main-container__company-history {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .company-history__title-h2 {
+                margin: 0;
+                width: 320px;
+            }
+            .company-history__title-p {
+                margin: 0;
+            }
+            .company-history__timeline {
+                display: none;
+            }
+            .company-history__content {
+                width: 320px;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                .company-history__content__block {
+                    width: 320px;
+                }
+            }
+
+        }
+        .main-container__our-members {
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            .our-members__h2 {
+                text-align: center;
+            }
+            .our-members__cards-of-members {
+                display: flex;
+                flex-direction: column;
+                .cards-of-members__card {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+}
